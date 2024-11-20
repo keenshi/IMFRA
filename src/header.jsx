@@ -1,0 +1,52 @@
+import React from 'react';
+
+function Header() {
+  return (
+    <header>
+    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div className="container">
+            {/* Logo */}
+            <img className="mb-3" src="/imfralogo.png" alt="Logo" style={{ height: '70px' }} />
+
+            {/* Navigation Links */}
+            <div
+                className="collapse navbar-collapse justify-content-end"
+                id="navbarNav"
+                style={{ fontFamily: 'Jost, sans-serif', fontWeight: 400 }}
+            >
+                <ul className="navbar-nav" style={{ gap: '15px', display: 'flex', alignItems: 'center' }}>
+                    <li className="nav-item">
+                        <a className="nav-link nav-text" href="#"    >
+                            Home
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link nav-text" href="#"    >
+                            Gallery
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link nav-text" href="#"    >
+                            About Us
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="btn btn-secondary text-white ms-lg-3" href="#" style={{ padding: '5px 15px' }}>
+                            Join Us!
+                        </a>
+                    </li>
+                    <li className="nav-item ms-4">
+                        <button className="btn btn-outline-dark d-flex align-items-center" style={{ borderWidth: '2px', fontSize: '14px', padding: '5px 10px', fontWeight: 600 }}>
+                            <i className="bi bi-globe me-2" style={{ fontSize: '16px' }}></i>DE
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  );
+}
+
+export default Header;
