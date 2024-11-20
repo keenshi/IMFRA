@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer style={{ backgroundColor: 'grey', color: '#FFFFFF', fontFamily: 'Jost, sans-serif', padding: '20px 20px' }}>
+    <footer style={{ backgroundColor: '#ceffb8', color: '#000000', fontFamily: 'Jost, sans-serif', padding: '20px 20px' }}>
       <div className='mt-5' style={{ maxWidth: '1300px', margin: '0 auto' }}>
         {/* IMFRA Title */}
         <div style={{ textAlign: 'left' }}>
@@ -19,13 +19,13 @@ function Footer() {
 
         {/* Social Icons */}
         <div style={{ marginTop: '20px', fontSize: '24px', display: 'flex', justifyContent: 'flex-start', gap: '20px' }}>
-          <a href="#" style={{ color: '#FFFFFF' }}>
+          <a href="#" style={{ color: '#000000' }}>
             <i className="bi bi-instagram"></i>
           </a>
-          <a href="#" style={{ color: '#FFFFFF' }}>
+          <a href="#" style={{ color: '#000000' }}>
             <i className="bi bi-facebook"></i>
           </a>
-          <a href="#" style={{ color: '#FFFFFF' }}>
+          <a href="#" style={{ color: '#000000' }}>
             <i className="bi bi-envelope"></i>
           </a>
         </div>

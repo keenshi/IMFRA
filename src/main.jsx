@@ -60,7 +60,7 @@ function MainContent() {
         className=""
         style={{
           borderRadius: "60px",
-          backgroundColor: "#F8F9FA",
+          backgroundColor: "#eeffe6",
           padding: "80px",
           marginTop: "30px",
         }}
