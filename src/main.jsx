@@ -15,8 +15,8 @@ function MainContent() {
           height: "400px", // Adjusted height to half
         }}
       >
-        <Carousel>
-          <Carousel.Item>
+        <Carousel >
+          <Carousel.Item className="text-dark">
             <img
               className="d-block w-100"
               src="https://via.placeholder.com/800x400"

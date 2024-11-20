@@ -3,7 +3,7 @@ import React from 'react';
 function Header() {
   return (
     <header>
-    <nav className="navbar navbar-expand-lg navbar-light shadow-sm" style={{backgroundColor : '#d9ffc7'}}>
+    <nav className="navbar navbar-expand-lg navbar-light shadow-sm" style={{backgroundColor : '#ceffb8'}}>
         <div className="container">
             {/* Logo */}
             <img className="mb-3" src="/imfralogo.png" alt="Logo" style={{ height: '70px' }} />
