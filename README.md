@@ -1,7 +1,7 @@
 # IMFRA
 
 IMFRA website using react JS
-# Note: Never push "node_modules" folder to github repo.
+## Note: Never push "node_modules" folder to github repo.
 
 ## Follow below steps to run the project:
 
