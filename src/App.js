@@ -1,10 +1,10 @@
-import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./footer";
 import Header from "./header";
 import MainContent from "./main";
 import { AboutUs } from "./Pages/AboutUs";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Events } from "./Pages/Events";
 import { GalleryPage } from "./Pages/GallleryPage";
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" Component={MainContent} />
+          <Route path="Events" Component={Events} />
           <Route path="gallery" Component={GalleryPage} />
           <Route path="aboutUs" Component={AboutUs} />
         </Routes>
