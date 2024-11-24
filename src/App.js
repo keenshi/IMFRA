@@ -5,6 +5,7 @@ import Header from "./header";
 import MainContent from "./main";
 import { AboutUs } from "./Pages/AboutUs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { GalleryPage } from "./Pages/GallleryPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" Component={MainContent} />
+          <Route path="gallery" Component={GalleryPage} />
           <Route path="aboutUs" Component={AboutUs} />
         </Routes>
         <Footer />
