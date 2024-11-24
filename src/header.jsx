@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -32,6 +31,12 @@ function Header() {
                   Home
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link nav-text" to="events">
+                  Events
+                </Link>
+              </li>
+              
               <li className="nav-item">
                 <Link className="nav-link nav-text" to="gallery">
                   Gallery
