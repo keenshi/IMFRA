@@ -13,7 +13,7 @@ function Header() {
             className="mb-3"
             src="/imfralogo.png"
             alt="Logo"
-            style={{ height: "70px" }}
+            style={{ height: "60px" }}
           />
 
           {/* Navigation Links */}
@@ -24,7 +24,12 @@ function Header() {
           >
             <ul
               className="navbar-nav"
-              style={{ gap: "15px", display: "flex", alignItems: "center" }}
+              style={{
+                gap: "15px",
+                display: "flex",
+                alignItems: "center",
+                fontSize: "20px",
+              }}
             >
               <li className="nav-item">
                 <Link className="nav-link nav-text" to="/">
@@ -36,7 +41,7 @@ function Header() {
                   Events
                 </Link>
               </li>
-              
+
               <li className="nav-item">
                 <Link className="nav-link nav-text" to="gallery">
                   Gallery

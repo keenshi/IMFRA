@@ -1,10 +1,20 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import HMDImage from "./images/HMD group photo.jpg";
+import EidUlAdha from "./images/Eid Ul Adha 2022.jpg";
+import IftarDawat from "./images/Iftaar-05.jpg";
 
 function MainContent() {
   return (
-    <div className="mt-5 mb-5 container" style={{ fontFamily: "Jost, sans-serif", maxWidth: '1300px' , justifyContent : 'center'}}>
+    <div
+      className="mt-5 mb-5 container"
+      style={{
+        fontFamily: "Jost, sans-serif",
+        maxWidth: "1300px",
+        justifyContent: "center",
+      }}
+    >
       {/* Carousel */}
       <div
         className=" shadow"
@@ -12,44 +22,44 @@ function MainContent() {
           overflow: "hidden",
           borderRadius: "60px",
           marginBottom: "30px",
-          height: "400px", // Adjusted height to half
+          height: "500px", // Adjusted height to half
         }}
       >
-        <Carousel >
+        <Carousel>
           <Carousel.Item className="text-dark">
             <img
               className="d-block w-100"
-              src="https://via.placeholder.com/800x400"
-              alt="First slide"
-              style={{ height: "400px", objectFit: "cover" }}
+              src={HMDImage}
+              alt="HMD event Volunteers"
+              style={{ height: "500px", objectFit: "cover" }}
             />
             <Carousel.Caption>
-              <h3>First Post</h3>
-              <p>Details about the first post.</p>
+              <h3></h3>
+              <p>IMFRA volunteers actively participated in HMD event</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://via.placeholder.com/800x400"
-              alt="Second slide"
-              style={{ height: "400px", objectFit: "cover" }}
+              src={EidUlAdha}
+              alt="Eid Ul Adha 2022 event"
+              style={{ height: "500px", objectFit: "cover" }}
             />
             <Carousel.Caption>
-              <h3>Second Post</h3>
-              <p>Details about the second post.</p>
+              <h3>Eid Ul Adha 2022 event</h3>
+              <p>IMFRA Community together on Eid Ul Adha 2022</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://via.placeholder.com/800x400"
-              alt="Third slide"
-              style={{ height: "400px", objectFit: "cover" }}
+              src={IftarDawat}
+              alt="Iftar by IMFRA"
+              style={{ height: "500px", objectFit: "cover" }}
             />
             <Carousel.Caption>
-              <h3>Third Post</h3>
-              <p>Details about the third post.</p>
+              <h3>Iftar by IMFRA</h3>
+              <p>Iftar dawat organised by IMFRA</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -69,7 +79,10 @@ function MainContent() {
         <div style={{ marginBottom: "30px" }}>
           <h2 style={{ fontWeight: "600" }}>About Our Organization</h2>
           <p style={{ fontSize: "18px", marginBottom: "60px" }}>
-            Welcome to our organization! We offer a variety of activities, events, and programs to engage our community. Whether you're interested in sports, cultural activities, or volunteering, there's something for everyone.
+            Welcome to our organization! We offer a variety of activities,
+            events, and programs to engage our community. Whether you're
+            interested in sports, cultural activities, or volunteering, there's
+            something for everyone.
           </p>
         </div>
 
@@ -85,7 +98,9 @@ function MainContent() {
             }}
           >
             <h3>Events</h3>
-            <p>Explore our upcoming events designed to bring people together.</p>
+            <p>
+              Explore our upcoming events designed to bring people together.
+            </p>
           </div>
           {/* Box 2 */}
           <div

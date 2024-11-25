@@ -16,3 +16,17 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.item {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.thumbnail-style {
+  height: 200px;
+  min-width: -webkit-fill-available;
+}
+
+.lb-close {
+  display: none !important;
+}
