@@ -1,8 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React from "react";
 import { Carousel } from "react-bootstrap";
-import HMDImage from "./images/HMD group photo.jpg";
 import EidUlAdha from "./images/Eid Ul Adha 2022.jpg";
+import HMDImage from "./images/HMD group photo.jpg";
 import IftarDawat from "./images/Iftaar-05.jpg";
 
 function MainContent() {
@@ -34,7 +33,7 @@ function MainContent() {
               style={{ height: "500px", objectFit: "cover" }}
             />
             <Carousel.Caption>
-              <h3></h3>
+              <h3>Volunteers</h3>
               <p>IMFRA volunteers actively participated in HMD event</p>
             </Carousel.Caption>
           </Carousel.Item>
