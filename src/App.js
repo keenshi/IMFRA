@@ -6,6 +6,7 @@ import MainContent from "./main";
 import { AboutUs } from "./Pages/AboutUs";
 import { Events } from "./Pages/Events";
 import { GalleryPage } from "./Pages/GallleryPage";
+import JoinUs from "./Pages/JoinUs";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="Events" Component={Events} />
           <Route path="gallery" Component={GalleryPage} />
           <Route path="aboutUs" Component={AboutUs} />
+          <Route path="joinUs" Component={JoinUs} />
         </Routes>
         <Footer />
       </div>

@@ -41,7 +41,11 @@ function Header() {
                   Events
                 </Link>
               </li>
-
+              <li className="nav-item">
+                <Link className="nav-link nav-text" to="">
+                  Programs
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link className="nav-link nav-text" to="gallery">
                   Gallery
@@ -53,13 +57,15 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link to="joinUs">
                 <a
                   className="btn btn-success text-white ms-lg-3"
                   href="#"
                   style={{ padding: "5px 15px" }}
-                >
+                > 
                   Join Us!
                 </a>
+                </Link>
               </li>
               <li className="nav-item ms-4">
                 <button
