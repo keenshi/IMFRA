@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from './Logo.png';
 
 function Header() {
   return (
@@ -11,9 +12,9 @@ function Header() {
           {/* Logo */}
           <img
             className="mb-3"
-            src="/imfralogo.png"
+            src={logo}
             alt="Logo"
-            style={{ height: "60px" }}
+            style={{ height: "80px" }}
           />
 
           {/* Navigation Links */}

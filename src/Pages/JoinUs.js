@@ -64,13 +64,12 @@ const JoinUs = () => {
             <ul style={styles.list}>
               <li>Access to exclusive resources and events</li>
               <li>Networking opportunities with industry leaders</li>
-              <li>Discounts on workshops and training sessions</li>
               <li>Stay informed with our newsletters and updates</li>
             </ul>
           </div>
 
           <div style={styles.roundedContainer}>
-            <h3>Connect with Us</h3>
+            <h3>Join Our Community</h3>
             <p>
               Our community is diverse and vibrant, made up of individuals from various
               backgrounds who bring unique perspectives and experiences. By joining us,
@@ -78,18 +77,18 @@ const JoinUs = () => {
               environment.
             </p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2KMAFJHeSqzbwO5m1ewpBVIkdXfS9eSS4jigiHkctHBVYyw/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-success text-white">
-              Connect <i className="bi bi-arrow-right"></i>
+              Onboarding Form <i className="bi bi-arrow-right"></i>
             </a>
           </div>
 
           <div style={styles.roundedContainer}>
-            <h3>How to Join?</h3>
+            <h3>Sign Up for Membership</h3>
             <p>
               Becoming a member is simple! Click the button below to fill out our
               membership form and become part of our growing community.
             </p>
             <a target="_blank" rel="noopener noreferrer" className="btn btn-success text-white ">
-              Become a Member <i className="bi bi-arrow-right"></i>
+              Enroll now <i className="bi bi-arrow-right"></i>
             </a> 
           </div>
         </section>
