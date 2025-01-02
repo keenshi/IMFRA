@@ -196,7 +196,7 @@ function MainContent() {
           access to exclusive events, valuable resources, and a network of
           inspiring individuals who are passionate about making a difference.
         </p>
-        <div style={{ textAlign: "left", marginTop: "20px" }}>
+        <div style={{ textAlign: "center", marginTop: "20px" }}>
           <button
             style={{
               backgroundColor: "#28a745",
@@ -227,13 +227,10 @@ function MainContent() {
           Contact Us
         </h2>
         <p style={{ fontSize: "16px", lineHeight: "1.6", textAlign: "justify" }}>
-          Have questions or want to learn more? Reach out to us at
-          <a href="mailto:info@organization.com" style={{ color: "#007bff", textDecoration: "none" }}>
-            info@organization.com
-          </a>
-          or call us at (123) 456-7890. We look forward to hearing from you!
+          Have questions or want to learn more? Reach out to us at (49) 456-7890. We look forward to hearing from you!
         </p>
       </div>
+
     </div>
   );
 }
