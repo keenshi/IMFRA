@@ -9,6 +9,7 @@ import Donate from "./Pages/Donate";
 import { Events } from "./Pages/Events";
 import { GalleryPage } from "./Pages/GallleryPage";
 import JoinUs from "./Pages/JoinUs";
+import Program from "./Pages/Progam";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="aboutUs" Component={AboutUs} />
           <Route path="joinUs" Component={JoinUs} />
           <Route path="Donate" Component={Donate} />
+          <Route path="program" Component={Program} />
         </Routes>
         <Footer />
         <FixedDonateButton />

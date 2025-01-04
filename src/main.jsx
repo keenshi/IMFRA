@@ -3,6 +3,7 @@ import { Carousel } from "react-bootstrap";
 import DonateImage from "./Donate.png";
 import JSAPImage from "./JSAP.png";
 import SAPImage from "./SAP.png";
+import Test from "./testimony.png";
 
 function MainContent() {
   return (
@@ -141,76 +142,77 @@ function MainContent() {
         <h2 style={{ textAlign: "center", fontWeight: "600", marginBottom: "30px" }}>
           Success Stories
         </h2>
-        <div
-          className="d-flex align-items-center mb-4"
-          style={{ gap: "20px", borderRadius: "15px", backgroundColor: "#eeffe6", padding: "20px" }}
-        >
-          <img
-            src="./images/testimonial1.jpg"
-            alt="Testimonial"
-            style={{ width: "80px", height: "80px", borderRadius: "50%" }}
-          />
-          <div>
-            <h5 style={{ fontWeight: "600", marginBottom: "5px" }}>Sarah</h5>
-            <p style={{ fontSize: "14px", lineHeight: "1.6" }}>
-              "This program helped me achieve my goals and build confidence. I
-              highly recommend it!"
-            </p>
+        <div style={{display:'flex', justifyContent:'center'}}>
+          <div
+            className="d-flex align-items-center mb-4"
+            style={{ width:'60%', gap: "20px", borderRadius: "15px", backgroundColor: "#eeffe6", padding: "20px" }}
+          >
+            <img
+              src={Test}
+              alt="Testimonial"
+              style={{ width: "80px", height: "80px", borderRadius: "50%" }}
+            />
+            <div>
+              <h5 style={{ fontWeight: "600", marginBottom: "5px" }}>Person1</h5>
+              <p style={{ fontSize: "14px", lineHeight: "1.6" }}>
+                "This program helped me achieve my goals and build confidence. I
+                highly recommend it!"
+              </p>
+            </div>
           </div>
         </div>
-        <div
-          className="d-flex align-items-center"
-          style={{ gap: "20px", borderRadius: "15px", backgroundColor: "#eeffe6", padding: "20px" }}
-        >
-          <img
-            src="./images/testimonial2.jpg"
-            alt="Testimonial"
-            style={{ width: "80px", height: "80px", borderRadius: "50%" }}
-          />
-          <div>
-            <h5 style={{ fontWeight: "600", marginBottom: "5px" }}>David</h5>
-            <p style={{ fontSize: "14px", lineHeight: "1.6" }}>
-              "The support and resources offered here are outstanding. I am so
-              grateful to be part of this community."
-            </p>
+        
+        <div style={{display:'flex', justifyContent:'center'}}>
+          <div
+            className="d-flex align-items-center"
+            style={{ width:'60%', gap: "20px", borderRadius: "15px", backgroundColor: "#eeffe6", padding: "20px" }}
+          >
+            <img
+              src={Test}
+              alt="Testimonial"
+              style={{ width: "80px", height: "80px", borderRadius: "50%" }}
+            />
+            <div>
+              <h5 style={{ fontWeight: "600", marginBottom: "5px" }}>Person2</h5>
+              <p style={{ fontSize: "14px", lineHeight: "1.6" }}>
+                "The support and resources offered here are outstanding. I am so
+                grateful to be part of this community."
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Join Us Section */}
-      <div
-        className="shadow"
-        style={{
-          borderRadius: "30px",
-          backgroundColor: "#ffffff",
-          padding: "40px",
-          marginTop: "40px",
-        }}
-      >
-        <h2 style={{ textAlign: "center", fontWeight: "600", marginBottom: "30px" }}>
-          Join Us
-        </h2>
-        <p style={{ fontSize: "16px", lineHeight: "1.6", textAlign: "justify" }}>
-          Be a part of a vibrant and supportive community dedicated to fostering
-          growth, connection, and shared opportunities. By joining us, you gain
-          access to exclusive events, valuable resources, and a network of
-          inspiring individuals who are passionate about making a difference.
-        </p>
-        <div style={{ textAlign: "center", marginTop: "20px" }}>
-          <button
-            style={{
-              backgroundColor: "#28a745",
-              color: "#fff",
-              border: "none",
-              padding: "10px 20px",
-              borderRadius: "5px",
-              cursor: "pointer",
-              fontSize: "16px",
-            }}
-          >
-            Join Now
-          </button>
-        </div>
+      <div style={{borderRadius: '15px',
+              backgroundColor: '#ffffff',
+              container:'flex',
+              padding: '30px',
+              marginTop: '20px',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)', 
+            }}>
+            <h3 style={{ textAlign: 'center', fontFamily: 'Poppins' }}>Join Our Community</h3>
+            <div style={{marginTop:'30px'}}>
+              <p>
+                Be part of a thriving and supportive community that embraces growth, connection, and shared opportunities. By joining us, you’ll gain access to exclusive events, valuable resources, and a network of inspiring individuals who are committed to making a meaningful difference in society. Our programs are designed to foster personal development, strengthen bonds within the community, and create a platform for collective learning and understanding.
+              </p>
+            </div>
+            <div>
+              <p>
+                From professional development workshops to social gatherings, Islamic lectures, and cultural events, we offer something for everyone. Our mission is to bring people together, inspire positive change, and uphold the values of compassion, mutual respect, and service to others. 
+              </p>
+            </div>
+            
+            
+            <div style={{
+              display:'flex',
+              justifyContent:'center',
+            }}>
+             <a style={{fontFamily:'Poppins'}} href="https://docs.google.com/forms/d/e/1FAIpQLSf2KMAFJHeSqzbwO5m1ewpBVIkdXfS9eSS4jigiHkctHBVYyw/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-success text-white">
+              Join <i class="bi bi-chevron-right"></i>
+            </a>  
+            </div>
+            
       </div>
 
       {/* Contact Us Section */}
@@ -220,13 +222,13 @@ function MainContent() {
           borderRadius: "30px",
           backgroundColor: "#ffffff",
           padding: "40px",
-          marginTop: "40px",
+          marginTop: "40px",    
         }}
       >
         <h2 style={{ textAlign: "center", fontWeight: "600", marginBottom: "30px" }}>
           Contact Us
         </h2>
-        <p style={{ fontSize: "16px", lineHeight: "1.6", textAlign: "justify" }}>
+        <p style={{ fontSize: "16px", lineHeight: "1.6", textAlign: "center" }}>
           Have questions or want to learn more? Reach out to us at (49) 456-7890. We look forward to hearing from you!
         </p>
       </div>

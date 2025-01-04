@@ -69,19 +69,6 @@ const JoinUs = () => {
           </div>
 
           <div style={styles.roundedContainer}>
-            <h3>Join Our Community</h3>
-            <p>
-              Our community is diverse and vibrant, made up of individuals from various
-              backgrounds who bring unique perspectives and experiences. By joining us,
-              you gain the opportunity to collaborate, learn, and grow within a supportive
-              environment.
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2KMAFJHeSqzbwO5m1ewpBVIkdXfS9eSS4jigiHkctHBVYyw/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-success text-white">
-              Onboarding Form <i className="bi bi-arrow-right"></i>
-            </a>
-          </div>
-
-          <div style={styles.roundedContainer}>
             <h3>Sign Up for Membership</h3>
             <p>
               Becoming a member is simple! Click the button below to fill out our

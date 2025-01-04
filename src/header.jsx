@@ -43,7 +43,7 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav-text" to="">
+                <Link className="nav-link nav-text" to="program">
                   Programs
                 </Link>
               </li>
@@ -62,7 +62,7 @@ function Header() {
                 <a
                   className="btn btn-success text-white ms-lg-3"
                   href="#"
-                  style={{ padding: "5px 15px" }}
+                  style={{ padding: "5px 15px", fontFamily:'Poppins', }}
                 > 
                   Join Us!
                 </a>

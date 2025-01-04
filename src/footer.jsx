@@ -1,8 +1,8 @@
-import React from 'react';
+import FrankfurtLogo from './StadtFrankfurt.png';
 
 function Footer() {
   return (
-    <footer style={{ backgroundColor: '#ceffb8', color: '#000000', fontFamily: 'Jost, sans-serif', padding: '20px 20px' }}>
+    <footer style={{ backgroundColor: '#ceffb8', color: '#000000', fontFamily: 'Jost, sans-serif', padding: '20px 20px', position: 'relative' }}>
       <div className='mt-5' style={{ maxWidth: '1300px', margin: '0 auto' }}>
         {/* IMFRA Title */}
         <div style={{ textAlign: 'left' }}>
@@ -34,6 +34,11 @@ function Footer() {
       {/* Footer Note */}
       <div style={{ textAlign: 'center', marginTop: '30px', fontSize: '14px', fontWeight: '300' }}>
         © IMFRA. All rights reserved.
+      </div>
+
+      {/* Stadt Frankfurt Logo */}
+      <div style={{ position: 'absolute', bottom: '30px', right: '40px' }}>
+        <img src={FrankfurtLogo} alt="Stadt Frankfurt Logo" style={{ width: 'auto', height: '50px' }} />
       </div>
     </footer>
   );
