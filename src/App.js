@@ -10,6 +10,7 @@ import { Events } from "./Pages/Events";
 import { GalleryPage } from "./Pages/GallleryPage";
 import JoinUs from "./Pages/JoinUs";
 import Program from "./Pages/Progam";
+import { PaymentSelectionPage } from "./Pages/PaymentSelectionPage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="aboutUs" Component={AboutUs} />
           <Route path="joinUs" Component={JoinUs} />
           <Route path="Donate" Component={Donate} />
+          <Route path="payment" Component={PaymentSelectionPage} />
           <Route path="program" Component={Program} />
         </Routes>
         <Footer />
