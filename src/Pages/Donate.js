@@ -4,10 +4,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./../Styles/style.css";
 import Form from "react-bootstrap/Form";
-import { loadStripe } from "@stripe/stripe-js";
 
 const stripePublishableKey =
-  "pk_live_51M21TPKPPt2IOFXI1b4X1KKVbsqWWrC15gHESAnDhBF3w6V6ZtHlEVMDhxsDnqhbJPakdJcNiT6wPKJFiq3WzpoT00LS19yite";
+  "pk_test_51M21TPKPPt2IOFXIEyxqgAZuMeoImvJZtHkL8GNjQ8s4R81JQHYFsa8AdrunWVDq8VCJ69Gorwz1N23Vza1gvJCY004saVEV1L";
 const studentLink = "https://buy.stripe.com/3cs9Bi1iDcoc5B69AG";
 const professionalLink = "https://buy.stripe.com/8wM8xe1iD9c08Ni6os";
 const membershipPlusLink = "https://buy.stripe.com/dR67taaTdcoc4x28wB";
@@ -15,13 +14,35 @@ const customLink = "";
 
 function Donate() {
   const navigate = useNavigate();
+  const studentRadioId = "student-radio";
+  const professionalRadioId = "professional-radio";
+  const memberPlusRadioId = "membershipPlus-radio";
+  const customAmountRadioId = "customeAmount-radio";
 
-  const [selectedPlan, setSelectedPlan] = useState("");
+  const [selectedPlan, setSelectedPlan] = useState(professionalRadioId);
   const [paymentURL, setpaymentURL] = useState(professionalLink);
 
   const handlePayment = async () => {
     const sessionUrl = `https://donate.stripe.com/test_9AQ02Bdnhbk7epacMM`;
-    window.location.href = paymentURL;
+    window.location.href = sessionUrl;
+  };
+
+  const radioBtnOnChange = (event) => {
+    setSelectedPlan(event.target.id);
+    switch (event.target.id) {
+      case studentRadioId:
+        setpaymentURL(studentLink);
+        break;
+      case professionalRadioId:
+        setpaymentURL(professionalLink);
+        break;
+      case memberPlusRadioId:
+        setpaymentURL(membershipPlusLink);
+        break;
+      default:
+        setpaymentURL(customLink);
+        break;
+    }
   };
 
   return (
@@ -95,21 +116,35 @@ function Donate() {
               label="Support as a student member and contribute to our initiatives at a discounted rate. (5 €)"
               name="group1"
               type="radio"
-              id="student-radio"
+              id={studentRadioId}
+              checked={selectedPlan === studentRadioId}
+              onChange={radioBtnOnChange}
             />
             <Form.Check
-              defaultChecked
               className="margin-bottom-normal"
               label="Join as a professional member to help sustain and expand our mission. (15 €)"
               name="group1"
               type="radio"
-              id="professional-radio"
+              id={professionalRadioId}
+              checked={selectedPlan === professionalRadioId}
+              onChange={radioBtnOnChange}
+            />
+            <Form.Check
+              className="margin-bottom-normal"
+              label="Membership plus plan. (50 €)"
+              name="group1"
+              type="radio"
+              id={memberPlusRadioId}
+              checked={selectedPlan === memberPlusRadioId}
+              onChange={radioBtnOnChange}
             />
             <Form.Check
               label="Custom donation amount to contribute as much as you wish."
               name="group1"
               type="radio"
-              id="customeAmount-radio"
+              id={customAmountRadioId}
+              checked={selectedPlan === customAmountRadioId}
+              onChange={radioBtnOnChange}
             />
           </Form>
         </div>
